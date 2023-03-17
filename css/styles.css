@@ -62,3 +62,14 @@ h3 {
     font-size: 5.6rem;
   }
 }
+
+/* Lists */
+#list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
