@@ -73,3 +73,17 @@ h3 {
 a {
   text-decoration: none;
 }
+
+/* Icons */
+.icon-list {
+  display: flex;
+  gap: 28px;
+}
+
+.list__icon {
+  font-size: 2rem;
+}
+
+.list__icon > a {
+  color: var(--color-grey);
+}
