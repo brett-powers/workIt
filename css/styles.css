@@ -87,3 +87,44 @@ a {
 .list__icon > a {
   color: var(--color-grey);
 }
+
+/* Buttons */
+.btn {
+  background: none;
+  border: none;
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: 1px;
+  outline: none;
+}
+
+.btn--primary {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+  padding: 2rem;
+  transition: border 0.1s, background 0.3s, color 0.3s;
+}
+
+.btn--primary:hover {
+  background: var(--color-primary);
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
+}
+
+.btn--secondary {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.btn--secondary::after {
+  background: var(--color-secondary);
+  content: '';
+  display: block;
+  height: 3px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.btn--secondary:hover {
+  color: var(--color-secondary);
+}
