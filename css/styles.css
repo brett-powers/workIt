@@ -128,3 +128,63 @@ a {
 .btn--secondary:hover {
   color: var(--color-secondary);
 }
+
+/* Hero */
+header {
+  background: var(--color-primary);
+}
+
+.hero {
+  color: #fff;
+  padding: 3rem 0 15rem 0;
+  text-align: center;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__header {
+  margin-top: 6.4rem;
+}
+
+.hero__image {
+  width: 100%;
+  position: absolute;
+  margin-top: 12rem;
+  left: 0;
+}
+
+.hero--break {
+  display: none;
+}
+
+.hero-underline {
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 18rem;
+  }
+
+  .hero__image {
+    width: 50%;
+    left: 25%;
+  }
+
+  .hero--break {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    padding-bottom: 25rem;
+  }
+
+  .hero__image {
+    margin-top: 15rem;
+  }
+}
