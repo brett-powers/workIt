@@ -224,3 +224,46 @@ header {
   color: var(--color-grey);
   line-height: 2.8rem;
 }
+
+@media screen and (min-width: 768px) {
+  .feature {
+    text-align: start;
+    flex-wrap: nowrap;
+  }
+
+  .feature__point {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 4.8rem;
+  }
+
+  /* I was having layout issues with the before tag
+    being squished and adding a width to the wrapper
+    fixed the issue. Im not exactly sure why*/
+  .feature__wrapper {
+    width: 90%;
+  }
+
+  .feature__point::before {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .feature {
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .feature__point {
+    flex-direction: column;
+    gap: 3rem;
+    width: 30%;
+  }
+
+  .feature__wrapper {
+    width: auto;
+  }
+}
