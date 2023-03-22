@@ -188,3 +188,39 @@ header {
     margin-top: 15rem;
   }
 }
+
+/* Feature */
+.feature {
+  counter-reset: feature;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25rem;
+  text-align: center;
+}
+
+.feature__header {
+  color: var(--color-primary);
+}
+
+.feature__point {
+  margin-top: 4rem;
+}
+
+.feature__point::before {
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary);
+  content: counter(feature);
+  counter-increment: feature;
+  display: flex;
+  font-weight: 600;
+  height: 5rem;
+  justify-content: center;
+  margin: 2rem auto;
+  width: 5rem;
+}
+
+.feature__text {
+  color: var(--color-grey);
+  line-height: 2.8rem;
+}
