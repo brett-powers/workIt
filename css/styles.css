@@ -188,3 +188,82 @@ header {
     margin-top: 15rem;
   }
 }
+
+/* Feature */
+.feature {
+  counter-reset: feature;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25rem;
+  text-align: center;
+}
+
+.feature__header {
+  color: var(--color-primary);
+}
+
+.feature__point {
+  margin-top: 4rem;
+}
+
+.feature__point::before {
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary);
+  content: counter(feature);
+  counter-increment: feature;
+  display: flex;
+  font-weight: 600;
+  height: 5rem;
+  justify-content: center;
+  margin: 2rem auto;
+  width: 5rem;
+}
+
+.feature__text {
+  color: var(--color-grey);
+  line-height: 2.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .feature {
+    text-align: start;
+    flex-wrap: nowrap;
+  }
+
+  .feature__point {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 4.8rem;
+  }
+
+  /* I was having layout issues with the before tag
+    being squished and adding a width to the wrapper
+    fixed the issue. Im not exactly sure why*/
+  .feature__wrapper {
+    width: 90%;
+  }
+
+  .feature__point::before {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .feature {
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .feature__point {
+    flex-direction: column;
+    gap: 3rem;
+    width: 30%;
+  }
+
+  .feature__wrapper {
+    width: auto;
+  }
+}
