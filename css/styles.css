@@ -267,3 +267,30 @@ header {
     width: auto;
   }
 }
+
+/* Callout */
+.callout__image {
+  max-width: 28rem;
+  position: relative;
+  top: 15rem;
+  z-index: -1;
+  left: 50%;
+  margin-left: -14rem;
+}
+
+.callout__content {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 3rem;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+/* NOTE: refactor line height to the p element in typography*/
+.callout__content p {
+  line-height: 2.8rem;
+}
+
+.callout__btn {
+  margin-top: 2.4rem;
+}
