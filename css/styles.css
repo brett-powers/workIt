@@ -351,3 +351,13 @@ header {
     bottom: -37rem;
   }
 }
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__list {
+  margin-top: 5rem;
+}
