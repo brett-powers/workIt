@@ -294,3 +294,60 @@ header {
 .callout__btn {
   margin-top: 2.4rem;
 }
+
+.callout__bg-image {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .callout {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .callout__content {
+    width: 45rem;
+    text-align: start;
+  }
+
+  .callout__image {
+    top: 23rem;
+    left: -6%;
+  }
+
+  .callout__bg-image {
+    display: block;
+    position: absolute;
+    bottom: -204px;
+    right: 60px;
+    transform: rotate(-90deg);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .callout__content {
+    width: 51rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .callout__image {
+    max-width: 47rem;
+    top: 42rem;
+    left: -33%;
+  }
+
+  .callout__bg-image {
+    bottom: -41rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .callout__content {
+    width: 73rem;
+  }
+
+  .callout__bg-image {
+    bottom: -37rem;
+  }
+}
