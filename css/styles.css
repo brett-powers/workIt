@@ -329,8 +329,8 @@ header {
   .callout__bg-image {
     display: block;
     position: absolute;
-    bottom: -204px;
-    right: 60px;
+    bottom: -175rem;
+    right: 10rem;
     transform: rotate(-90deg);
   }
 }
@@ -349,7 +349,7 @@ header {
   }
 
   .callout__bg-image {
-    bottom: -41rem;
+    bottom: -187rem;
   }
 }
 
