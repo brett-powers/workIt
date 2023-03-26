@@ -48,6 +48,10 @@ h3 {
   font-size: 3.2rem;
 }
 
+p {
+  line-height: 2.8rem;
+}
+
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 6rem;
@@ -235,7 +239,6 @@ header {
 
 .feature__text {
   color: var(--color-grey);
-  line-height: 2.8rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -297,11 +300,6 @@ header {
   padding: 3rem;
   text-align: center;
   margin-top: 10rem;
-}
-
-/* NOTE: refactor line height to the p element in typography*/
-.callout__content p {
-  line-height: 2.8rem;
 }
 
 .callout__btn {
