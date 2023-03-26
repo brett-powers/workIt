@@ -4,6 +4,19 @@
   --color-grey: #584d62;
 }
 
+/* Layout */
+header,
+main {
+  padding: 0 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  header,
+  main {
+    padding: 0 5rem;
+  }
+}
+
 /* Typography */
 html {
   font-size: 62.5%;
@@ -33,6 +46,10 @@ h2 {
 
 h3 {
   font-size: 3.2rem;
+}
+
+p {
+  line-height: 2.8rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -107,7 +124,7 @@ a {
 
 .btn--primary:hover {
   background: var(--color-primary);
-  border: 2px solid var(--color-secondary);
+  box-shadow: 0 0 0 2px var(--color-secondary);
   color: var(--color-secondary);
 }
 
@@ -186,5 +203,179 @@ header {
 
   .hero__image {
     margin-top: 15rem;
+  }
+}
+
+/* Feature */
+.feature {
+  counter-reset: feature;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25rem;
+  text-align: center;
+}
+
+.feature__header {
+  color: var(--color-primary);
+}
+
+.feature__point {
+  margin-top: 4rem;
+}
+
+.feature__point::before {
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary);
+  content: counter(feature);
+  counter-increment: feature;
+  display: flex;
+  font-weight: 600;
+  height: 5rem;
+  justify-content: center;
+  margin: 2rem auto;
+  width: 5rem;
+}
+
+.feature__text {
+  color: var(--color-grey);
+}
+
+@media screen and (min-width: 768px) {
+  .feature {
+    text-align: start;
+    flex-wrap: nowrap;
+  }
+
+  .feature__point {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 4.8rem;
+  }
+
+  /* I was having layout issues with the before tag
+    being squished and adding a width to the wrapper
+    fixed the issue. Im not exactly sure why*/
+  .feature__wrapper {
+    width: 90%;
+  }
+
+  .feature__point::before {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .feature {
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .feature__point {
+    flex-direction: column;
+    gap: 3rem;
+    width: 30%;
+  }
+
+  .feature__wrapper {
+    width: auto;
+  }
+}
+
+/* Callout */
+.callout__image {
+  max-width: 28rem;
+  position: relative;
+  top: 15rem;
+  z-index: -1;
+  left: 50%;
+  margin-left: -14rem;
+}
+
+.callout__content {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 3rem;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.callout__btn {
+  margin-top: 2.4rem;
+}
+
+.callout__bg-image {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .callout {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .callout__content {
+    width: 45rem;
+    text-align: start;
+  }
+
+  .callout__image {
+    top: 23rem;
+    left: -6%;
+  }
+
+  .callout__bg-image {
+    display: block;
+    position: absolute;
+    bottom: -175rem;
+    right: 10rem;
+    transform: rotate(-90deg);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .callout__content {
+    width: 51rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .callout__image {
+    max-width: 47rem;
+    top: 42rem;
+    left: -33%;
+  }
+
+  .callout__bg-image {
+    bottom: -187rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .callout__content {
+    width: 73rem;
+  }
+
+  .callout__bg-image {
+    bottom: -37rem;
+  }
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+}
+
+.footer__list {
+  margin-top: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    margin-top: 9rem;
   }
 }
