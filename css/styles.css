@@ -4,6 +4,19 @@
   --color-grey: #584d62;
 }
 
+/* Layout */
+header,
+main {
+  padding: 0 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  header,
+  main {
+    padding: 0 5rem;
+  }
+}
+
 /* Typography */
 html {
   font-size: 62.5%;
