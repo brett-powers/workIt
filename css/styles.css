@@ -48,6 +48,10 @@ h3 {
   font-size: 3.2rem;
 }
 
+p {
+  line-height: 2.8rem;
+}
+
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 6rem;
@@ -120,7 +124,7 @@ a {
 
 .btn--primary:hover {
   background: var(--color-primary);
-  border: 2px solid var(--color-secondary);
+  box-shadow: 0 0 0 2px var(--color-secondary);
   color: var(--color-secondary);
 }
 
@@ -235,7 +239,6 @@ header {
 
 .feature__text {
   color: var(--color-grey);
-  line-height: 2.8rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -299,11 +302,6 @@ header {
   margin-top: 10rem;
 }
 
-/* NOTE: refactor line height to the p element in typography*/
-.callout__content p {
-  line-height: 2.8rem;
-}
-
 .callout__btn {
   margin-top: 2.4rem;
 }
@@ -331,8 +329,8 @@ header {
   .callout__bg-image {
     display: block;
     position: absolute;
-    bottom: -204px;
-    right: 60px;
+    bottom: -175rem;
+    right: 10rem;
     transform: rotate(-90deg);
   }
 }
@@ -351,7 +349,7 @@ header {
   }
 
   .callout__bg-image {
-    bottom: -41rem;
+    bottom: -187rem;
   }
 }
 
